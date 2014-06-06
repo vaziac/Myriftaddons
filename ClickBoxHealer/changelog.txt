@@ -1,0 +1,499 @@
+﻿
+**************** Working on for upcoming updates **********************
+Re-arrange buff watch options so that you can keep the individual corner colors but set low duration colors
+	--will take a little bit of time to untwist it's current setup
+Create a cover for Offline,AFK,Warfront players
+
+
+**************** TODOs - For long term updates *************************
+Add a check to prevent new group members in a different zone/instance from showing offline.
+	*also add an alternative for zoned members that says -1 or something when unavailable
+Add options to change default debuff colors and default whitelist debuff color
+Cleric Defiler Totem Solution: Create an empty frame if character is a cleric with a permanent mask to use for the totem
+Add Raid debuff icon w/ options (size/move/etc)
+Change the /cbh reset to not trigger until clicking the reloadui button.
+	*Gives the user the ability to back out of it if they change their mind
+Add more font options - different fonts, shadows/outlines, etc
+Add link monitoring for clerics
+	*They can have up to 4. Maybe line them up in a corner or something
+	*Another possible option is to allow wildcards in the spell monitoring. Bond of * will search for any link from the cleric.
+Add option to set player to be first in the group
+	*Might also use this setting to organize the raid so that new people get batched on the end
+Ability to display roles for just Tanks/Healers/Support individually
+Add a copy keybind from ... function. Allowing similar/like specs to easily remain the same
+Add an option to only toggle the frames while in a party
+--Add an option to toggle showing party/raid leader. *Not possible at the moment
+Add size/text color options for HoTs stack count
+
+
+** These things are of course outside of the maintenance and recoding I am working on and will get put in along the way
+
+
+
+
+http://rift.curseforge.com/addons/click-box-healer/forum/chages-and-updates/57075-change-log/#p1
+
+
+
+
+
+[B]3/3 - v1.17 [/B]
+[LIST]
+[*] Added the ability to class color mana bars
+[*] Fixed bug that cause frame objects (name, role, etc) to offset when changing their location
+[*] Fixed a bug that would sometimes cause the save button to be really small
+[*] Added mana bar and charge bar to player frame
+[*] Fixed a bug that cause the player's level to not update after leveling
+[*] Added an option for transparency of the health frame
+[*] Added an option for a solid color health frame
+[*] Fixed a bug that caused offline members to be full alpha after a reloadui
+[*] Added an in-combat icon to player frame. (bad graphic but visible. will change in the future)
+[*] Option window being re-worked to allow for configuration of new frames
+[/LIST]
+
+
+[B]2/23 - v1.16 [/B]
+[LIST]
+[*] Fixed buff tracking bug that caused an infinite error when party members leave the group
+[*] Added movers for the Player and Target frames
+[*] Embedded the addon cAlign to use for aligning elements on your UI.
+		* /align ## (in multiples of 32) then /align 0 to turn off
+[/LIST]
+
+
+[B]11/08 - v1.15 [/B]
+[LIST]
+[*] Next attempt at fixing the bug that was causing errors when leaving groups (I hope).
+[/LIST]
+
+
+[B]11/08 - v1.13 [/B]
+[LIST]
+[*] Fixed a bug that was causing errors when leaving groups (I hope).
+[*] Fixed display issue at initial login when Player frame were turned off.
+[*] Fixed a bug with the show notification button on the options window.
+[*] Temporary fix to make the buff stacks a little more visible. Options are on the list of things to do.
+[/LIST]
+
+
+[B]11/06 - v1.12 [/B]
+[LIST]
+[*] Fixed offset bug in new raid frame layout.
+[*] Added the new raid marks that will go live in the next Rift Patch.
+[*] Fixed overlay in the health bar for raid frames so they don't reflect the background color.
+[*] Added a new Unit Frame for player and target. These are beta and lacking features but functional.
+[*] The new frames can be turned on/off and reset via /cbhu options.
+[*] Continue to optimize code and internal reworks to get performance as more things are added.
+[*] Made several more internal code changes to prepare for future additions.
+[*] Updated LibVersion checker.
+[/LIST]
+
+
+[B]10/01 - v1.11 [/B]
+[LIST]
+[*] Fixed a bug that caused a nil value when mentoring.
+[*] Removed the debug check that was in the LOS routine.
+[/LIST]
+
+
+[B]10/01 - v1.10 [/B]
+[LIST]
+[*] Major changes to the core events. Should help improve performance.
+[*] Added a healthcap marker for when units have debuffs that prevent them from gaining full health.
+[*] Made a new Ready Mark and Ready X that will hopefully be a little more visible and pleasing to the eye.
+[/LIST]
+
+
+[B]09/26 - v1.9.1 [/B]
+[LIST]
+[*] Fixed a bug that caused a nil value with the minimap button during log in.
+[/LIST]
+
+
+[B]09/25 - v1.9 [/B]
+[LIST]
+[*] Added absorb bar height options.
+[*] Changed the debuff white/blacklist box to a more noticeable color.
+[*] Moved several buff related options to the buff tab area.
+[*] Moved the "Show Minimap" button to the first tab.
+[*] Added a new frame that will show once per version update. Shows any major changes or special instructions for this patch.
+[*] Moved warning text for some options into a tooltip rather than being displayed underneath. This was done to free up some more space.
+[*] Updated version to be compatible with 2.4.
+[/LIST]
+
+
+[B]09/19 - v1.8.10 [/B]
+[LIST]
+[*] Fixed a bug in the new buff additions that caused a nil value for new users.
+[/LIST]
+
+
+[B]09/16 - v1.8.9 [/B]
+[LIST]
+[*] Fixed a bug in the frame drawing process that was causing a nil error.
+[*] Fixed a bug that caused a nil value error when changing the alpha for the backframe.
+[*] Fixed a bug that disoriented the role icon or raid mark when repositioned.
+[*] Added more buff slots. Now can monitor up to 9 buffs at once.
+[*] Added health status options. Can now track as percent, deficit, or flat health.
+[*] Added shadow to health status text.
+[*] Changed the custom macro options to be a little more intuitive.
+[*] Added color options for the absorb shield.
+[*] Changed option window to only load when requested.
+[/LIST]
+
+
+[B]09/11 - v1.8.8 [/B]
+[LIST][*] Fixed a bug in unit column count that was causing a nil error.
+[*] Converted column count option into a drop down.
+[*] Re-added the checkbox for drawing frames horizontally instead of relying on column count being 5.
+[*] Also now allows the groups to be drawn horizontal no matter how many columns are selected.
+[*] Fixed absorb bar calculation so the shield bar is better visible on mana users frames as well.
+[*] Added an option to change Range check to 35 yards.
+[*] Added another check to catch non-mana users that were still getting randomly offset in the group.
+[/LIST]
+
+
+[B]09/08 - v1.8.7 [/B]
+[LIST][*] Fixed a bug in the frame drawing process for reverse vertical frame ordering.
+[*] Added shadows to the frame name. Options to customize this will come soon.
+[/LIST]
+
+
+[B]09/04 - v1.8.6 [/B]
+[LIST][*] Fixed another bug that caused the grow up sorting to display incorrectly with larger mana bar values.
+[*] Fixed a bug that cause the display for the shield bar to extend past the frame with certain skins.
+[/LIST]
+
+
+[B]09/02 - v1.8.5 [/B]
+[LIST]
+[*] Fixed bug that caused the order bottom to top to offset the mana bar incorrectly.
+[*] Custom Buff watch entry box will now show the current spell and focus to allow quicker entry.
+[/LIST]
+
+
+[B]08/28 - v1.8.4 [/B]
+[LIST]
+[*] Fixed bug that caused the new fade out of combat to show even when disabled.
+[/LIST]
+
+
+[B]08/28 - v1.8.3 [/B]
+[LIST]
+[*] Fixed bug that caused the mover orb to not be clickable when frames are unlocked
+[*] Fixed bug in moving the option window that caused it to "jump"
+[*] Added Out of Combat fading for CBH
+[*] Added option for the out of combat fading
+[*] Changed the role icons to something a little... shinier
+[/LIST]
+
+
+[B]08/11 - v1.8.2 [/B]
+[LIST]
+[*] Addon help file updated as well as the instructions on RiftUI and Curse
+[*] Fixed a bug with debuff burnout not showing properly
+[*] Fixed bug that caused error spam if attempted to unlock frames during combat
+[*] Fixed a bug that caused occasional errors when leaving combat
+[*] Fixed a bug that caused errors when changing the absorb checkbox
+[*] Fixed bug that could sometimes cause errors when dragging spells
+[*] Fixed a bug that would cause errors when removing stacked buffs/debuffs
+[/LIST]
+
+
+[B]08/08 - v1.8.1 [/B]
+[LIST]
+[*] Fixed a bug when changing Out of Range opacity
+[/LIST]
+
+
+[B]08/07 - v1.8 [/B]
+[LIST]
+[*] Replaced a couple of debuff checks to help performance.
+[/LIST]
+
+
+[B]08/06 - v1.7.15 [/B]
+[LIST]
+[*] Fixed a small bug in the new buff monitoring that occasionally had nil values
+[/LIST]
+
+
+[B]08/05 - v1.7.14 [/B]
+[LIST]
+[*] Add a small little check to fix German [ctrl] and French [shift] modifier keys
+[/LIST]
+
+
+[B]08/05 - v1.7.13 [/B]
+[LIST]
+[*] Re-coded the buff/debuff system. Will hopefully perform better now.
+	--Fixed several bugs during this process as well.
+	--Fixed a bug causing the buffs to not flash/fade when show buff icons was checked
+	--Fixed a bug that could cause the buffs to appear half faded when re-applied
+	--Fixed a few possible bugs by adding checks to prevent certain options being selected together
+[*] Fixed a bug that caused the backdrop for the mana bar to disappear.
+[/LIST]
+
+
+[B]08/03 - v1.7.11 [/B]
+[LIST]
+[*] Fixed bug in Custom Macro editor the prevented entering to the next line.
+[*] Fixed bug that caused keys to be "stuck" after using the custom macro editor
+[*] Added positioning and size options for the ready check marks
+	--still a bug if you reloadui during a ready check. Still working on correcting.
+[*] Adjusted some default values for the item positioning on the unit frames
+[/LIST]
+
+
+[B]08/02 - v1.7.10 [/B]
+[LIST]
+[*] Fixed a bug that caused the Aggro box to cut through part of the frame.
+[*] Added options for name length. Can select auto or a static size.
+[*] Fixed a bug that caused frame color to be black after buffs were removed.
+[/LIST]
+
+
+[B]07/30 - v1.7.9 [/B]
+[LIST]
+[*] More configuration window changes
+[*] All color changes to the frame are now temporary. Click Save to apply or cancel to abort.
+[*] Addon current version moved to the top by the title
+[*] Health color is now a selectable option from the list to be changed
+[*] Color by health percent has been moved to the right list of general options
+[*] Added options to customize Name, Health/Status, Role, Raid Mark placement
+[*] Added option to size raid marker
+[*] Added an option to size status/health percent separately from name
+[*] Added a button to allow cancel color changes
+[/LIST]
+
+
+[B]07/28 - v1.7.8 [/B]
+[LIST]
+[*] Updated more variables for the next stage of layout changes
+[*] Fixed multiple variables that affected the health and mana updates
+[/LIST]
+
+
+[B]07/28 - v1.7.7 [/B]
+[LIST]
+[*] Updated some of the default variables in preparation for upcoming layout changes
+[*] Added functionality to draw groups based on columns. 1 column of 20, 2 columns of 10, etc.
+[/LIST]
+
+
+[B]07/19 - v1.7.6 [/B]
+[LIST]
+[*] Fixed bug that was causing errors for partially available party members
+[*] Removed a leftover troubleshooting step that was printing "UP" in chat frames.  :p
+[/LIST]
+
+
+[B]07/17 - v1.7.5 [/B]
+[LIST]
+[*] Couple of bug fixes for combat frame handling
+[/LIST]
+
+
+[B]07/16 - v1.7.4 [/B]
+[LIST]
+[*] Added version tracking for CBH. Will now notify users of new versions of CBH.
+[*] Fixed a bug that caused errors for cbh.GlobalColors variable being empty.
+[/LIST]
+
+
+[B]07/16 - v1.7.3 [/B]
+[LIST]
+[*] Fixed a bug that caused blank entries in the spell list if a duplicate was added. (ie. Guild perk Blood Thirsty + War Attunement Blood Thirsty)
+[*] Fixed bug where occasionally mouseovers weren't being correctly set on party changes
+[*] Fixed bug with unit frames not being updated when in different "instanced" zones.
+[*] Added a pause in the config window for building the ability list. This should resolve some users getting performance warnings when opening the options.
+[/LIST]
+
+
+[B]07/15 - v1.7.2 [/B]
+[LIST]
+[*] Spread the spell list across spell binding and buff/debuff tab
+[*] Fixed a bug that prevent sometimes dragging spells to HoT locations
+[/LIST]
+
+[B]07/15 - v1.7.1 [/B]
+[LIST]
+[*] Added a tooltip to the minimap button
+[*] Redesigned Configuration window for CBH
+[*] Redesigned functionality and listing for spells and abilities tab
+[*] Added drag and drop functionality to the spell list
+	--Items can be dragged to both the spelling keybinding and to the buff tracker.
+[*] Moved track HoTs checkbox to the frame options tab with the rest of the options
+[*] Changed default range check distance to 30 yards
+[/LIST]
+
+
+[B]07/04 - v1.6.6 [/B]
+[LIST]
+[*] Fixed a bug that caused mouseover units to on occasion not populate
+[/LIST]
+
+
+[B]07/02 - v1.6.5 [/B]
+[LIST]
+[*] Fixed a bug that caused new units with 100% to not show correct health values upon joining the group.
+[*] Fixed a bug that caused "stuck" frames when going from a raid to 5 or less people. Only occured if trying to move them back to group1.
+[*] Fixed a bug in the new coding that caused aggro indicator to not be retained if unit was moved around in the group.
+[*] Fixed a bug that caused Raid Marks to not show conistently.
+[*] Fixed bug that prevented mana bar height option to not update on-the-fly.
+[/LIST]
+
+
+[B]06/17 - v1.6.4 [/B]
+[LIST]
+[*] Fixed bug that caused errors when switching to roles above 6.
+[/LIST]
+
+
+[B]06/16 - v1.6.3 [/B]
+[LIST]
+[*] Fixed an issue where rolesets were being saved after the role changes.
+[*] Updated artwork for ready checks
+[/LIST]
+
+
+[B]6/14 - v1.6.2 [/B]
+[LIST]
+[*] Fixed bug that cause unit names to get changed to group01,02,etc after changing some layout options.
+[*] Optimized CBH load routines for quicker load times
+[*] Completely separated config window from lock/unlock features
+[*] Fixed a bug that was causing issues with the profiles not saving correctly
+[*] Fixed bug where the buff icons didn't scale "on the fly"
+[*] Fixed a bug in the drop down for texture selection. Will now be wide enough to see all the text
+[*] Converted more events into the new event format in preparation for upcoming API changes
+[/LIST]
+
+
+
+[B]6/12 - v1.6r [/B]
+[LIST]
+[*] Fixed some buff/debuff "sticking" issues that caused debuffs to not disappear when no longer present.
+**** A BIG THANKS TO SOLF for this and some other little fixes.
+[*] Fixed an issue that cause frames to show incorrect status text, calling colors, etc when "re-used"
+[*] Migrated all frame events into the new event model for upcoming API changes
+[*] Updated embedded libraries used in CBH. (libsimplewidgets)
+[*] 30% migration of checks/functions that were be executed more than needed into a less intensive more reliable format. This is taking some time and will eventually lead to CBH 2.0 which will hopefully have a greatly reduced overhead.
+[/LIST]
+
+
+
+[B]5/31 - v1.5.7 Reborn[/B]
+** Just a couple of hotfixes here **
+[LIST]
+[*] Fixed a bug that caused errors with offline units after loading screens
+[*] Fixed an internal bug that wasn't copying new variables that were added for future updates
+[/LIST]
+
+
+
+[B]5/28 - v1.5.6 Reborn[/B]
+[LIST]
+[*] More code documentation
+[*] Added ability to update mana bar size
+[*] Added a filler tab in the options frame to provide added "onload" functionality
+[*] Adjusted some of the default values to better fit "out of the box"
+[*] Updated Absorb bar to show above manabar OR replace when not present
+[*] Changed minimap button functionality: Left-Opens Config, Right-Unlocks frames, Middle-Hide/Show frames
+[*] Fixed unit frame font size bug
+[*] Fixed bug with misplaced options (probably caused from the code re-org)  :(
+[/LIST]
+
+
+[B]5/27 - v1.5.5 Reborn[/B]
+[LIST]
+[*] Again nothing major. Lots of file and code structure changes. Just getting things ready.
+[*] Adding lots of documentation to the code
+[/LIST]
+
+
+[B]5/23 - v1.5.4 Reborn[/B]
+[LIST]
+[*] As stated in the addon details, nothing major here. Just some infrastructure changes.
+[*] Updated file location for option window.
+[*] Updated author ownership information.
+[/LIST]
+
+
+[B]12/18 - v1.5.3[/B]
+[LIST]
+[*] Added option to show icons on buffs.
+[*] Absorption bar is now larger for Warriors and Rogues.
+[*] Custom buffs now match if the beginning of the spell matches what you've entered. "Link of" will catch all your Defiler links!
+[*] Other small bug fixes.
+[/LIST]
+
+
+[B]12/5 - v1.5.2[/B]
+[LIST]
+[*]Fixed issue with absorption bar not correctly responding to Burnout debuff.
+[/LIST]
+
+
+[B]12/4 - v1.5.1[/B]
+[LIST]
+[*]Fixed issue with "duration" and "begin" errors on buffs and debuffs that did not contain those values.
+[/LIST]
+
+
+[B]11/28 - v1.5[/B]
+[LIST]
+[*] Rewrote buff monitoring section for improved CPU performance.
+[*] Fixed performance issue when in a raid of 5 or fewer people.
+[*] Added absorption tracking to frames. This tracker also shows if Burnout is present on the target (pink coloring, vs normal cyan coloring).
+[*] Hopefully fixed last issue of floating point math errors.
+[*] Frames now correctly display the new graphical raid markers
+[*] Ability and Buff lists are now created when Options pane is loaded, to reduce performance error warnings.
+[/LIST]
+
+
+[B]11/5 - v1.4[/B]
+[LIST]
+[*] Added scroll wheel casting options.
+[*] Fixed more parameter bug issues.
+[/LIST]
+
+
+[B]9/16 - v1.3[/B]
+
+[LIST]
+[*] Updated code to be compatible with the new API changes.
+[/LIST]
+
+
+[B]7/18 - v1.2[/B]
+
+[LIST]
+[*] Fixed bug that caused a nil error on line 162 upon initially loading.
+[*] Added the ability to save profiles across characters. This includes Frame spacing, sizes, textures, location on the screen and health colors. THIS DOES NOT INCLUDE ANY BUFF COLORING OPTIONS.
+[*] Added a message that gets displayed if you try to open the config window while in combat.
+[*] Added some more performance checks to help reduce the occurrence of watchdog (addon performance monitor)
+[/LIST]
+
+
+[B]7/11 - v1.1[/B]
+
+[LIST]
+[*] Characters who are dead now show “Dead” for health, rather then “0%”
+[*] Fixed a bug with certain slider values creating floating point errors.
+[*] Minimap button no longer responds in combat, to fix “secured frame” error.
+[*] Added health warning color option - colors the frame yellow/red at low health levels.
+[*] Adjusted several textures slightly to represent the colors better.
+[*] Added dynamic length for unit names - changes as you change your frame width!
+[*] Updated the addon help file that is packaged with the addon.
+[*] New screenshots uploaded of the addon.
+[*] Fixed a bug that caused it to show selected unit boxes for units that aren’t available.
+[*] Fixed a bug that prevented new unit frames being drawn after leaving combat.
+[*] Fixed a bug with the offline text still showing on units when hide percent is active.
+[*] Fixed a bug with Buff list selection not clearing when selections change.
+[*] Added an option to set custom buffs to watch. This can include debuffs such as ones from Cleric’s shield abilities.
+[*] Fixed a bug where buffs that were removed from the watch list were still showing on frames.
+[*] Fixed a bug that caused units to show out of range/los incorrectly. (hopefully permanently fixed this time)
+[*] Fixed a bug that was causing unit frames to target pets or not be targetable at all due to incorrect party status/counts.
+[/LIST]
+
+

@@ -1,0 +1,16 @@
+Identifier	= "Align"
+Name		= "Align"
+Description = "Produces a grid overly of variable size, enabling better alignment of UI objects."
+Author		= "Jordan White"
+Website		= ""
+Email		= "jordan@pobeling.com"
+Version		= "0.1a"
+Environment = "1.3"
+
+RunOnStartup = {
+	"align.lua",
+}
+-- X-Curse-Packaged-Version: v1.31
+-- X-Curse-Project-Name: Click Box Healer
+-- X-Curse-Project-ID: click-box-healer
+-- X-Curse-Repository-ID: rift/click-box-healer/mainline

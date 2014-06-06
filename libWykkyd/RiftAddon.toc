@@ -1,0 +1,28 @@
+Identifier  = "libWykkyd"
+Name        = "Wykkyd Library"
+Description = "Wykkyd's library of global variables, functions, resources and frame handlers."
+Author      = "Wykkyd@Laethys Updates by Mael@Wolfsbane"
+Version     = "2.3.3"
+Email       = "gadgetsoutfitter@gmail.com"
+Environment = {"2.7"} 
+
+RunOnStartup    = { 
+    "wyk.lua", 
+    "wyk.func.lua", 
+    "wyk.vars.lua", 
+    "wyk.addons.lua", 
+    "wyk.EVENT.lua", 
+    "wyk.frame.lua", 
+    "wyk.frame.properties.lua", 
+    "wyk.frame.standard.lua", 
+    "wyk.frame.border.lua", 
+    "wyk.frame.slideframe.lua", 
+    "wyk.frame.imageslider.lua", 
+    "wyk.frame.hr.lua", 
+    "wyk.init.lua", 
+}
+SavedVariables  = {
+	wyk_saved_GearIcons = "character",
+}
+Embed           = {}
+Dependencies    = {}

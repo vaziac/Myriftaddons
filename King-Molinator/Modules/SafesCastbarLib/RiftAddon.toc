@@ -1,0 +1,38 @@
+﻿Identifier = "SafesCastbarLib"
+
+Name = "Safe's Castbar Library"
+NameShort = "LibSCast"
+
+Description = "Castbar Object Library with caching system."
+
+Author = "Paul Snart"
+Website = "http://twitter.com/#!/psnart"
+Email = "snarty@gmail.com"
+
+Version = "0.1.9"
+
+Environment = "2.5"
+
+RunOnStartup = {
+	"LibSCast.lua",
+	"Locale/English.lua",
+	"Locale/French.lua",
+	"Locale/German.lua",
+	"Locale/Russian.lua",
+}
+
+Embed = {
+	["SafesTableLib"] = true,
+	["SafesUnitLib"] = true,
+	["TextureHandler"] = true,
+}
+
+Dependencies = {
+	SafesTableLib = {"required", "before"},
+	SafesUnitLib = {"required", "before"},
+	KBMTextureHandler = {"required", "before"},
+}
+-- X-Curse-Packaged-Version: r765
+-- X-Curse-Project-Name: King Boss Mods
+-- X-Curse-Project-ID: king-molinator
+-- X-Curse-Repository-ID: rift/king-molinator/mainline

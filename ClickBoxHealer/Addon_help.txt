@@ -1,0 +1,68 @@
+[b][size="16"][color="RED"]UPDATES:[/color][/size] IF YOU ARE NEW TO CBH, PLEASE READ.[/b] I have updated the help info below. Same info is also included in the addon folder for quicker reference if needed. Please look over this [b]BEFORE[/b] posting issues. If you have difficulties, please visit the forum page and post a description WITH errors (if errors were caused) to be researched. Thanks.
+
+[color="DeepSkyBlue"]I have made myself publicly available in-game for people to contact me. I have assisted many people that ran into snags with things not working. I welcome your feedback and quick assistance with setting up if you have difficulties. Thus far has not been overwhelming and will continue to do so. I can be found at Ayhri@Faeblight, friend me and catch me online. If you have errors or bugs PLEASE post them in the forums to be researched.[/color]
+
+[b][color="RED"][size="16"]CBH FORUM ON CURSE:[/size][/b]  [url]http://rift.curseforge.com/addons/click-box-healer/forum/[/url][/color]
+
+[b][color="BLUE"]Thank you everyone for all the feedback that has been provided. It is much appreciated and very helpful in developing CBH into something you all can enjoy. Please support the ongoing updates with a donation. :D[/color][/b]
+
+
+###########################################################
+
+[color="SeaGreen"][u][b]OVERVIEW:[/b][/u][/color]
+
+Click Box Healer is primarily viewed as a healing addon, but can be useful to all roles. CBH is used to quicken healing and more efficiently identify the current status of your party, displaying everything from health and agrro to buffs and debuffs on each member. This addon allows macros to be bound to click actions that are performed on a set of raid frames that will cast the selected abilities/macro. These frames are usable when solo, in a party, with pets (groups 5 or less), or in a raid. It accepts up to the basic 5 mouse buttons, along with scroll up and down, as input (as limited by the RiftAPI). These inputs can be bound in conjunction with keyboard buttons (shift, ctrl, alt) for even more possibilities.
+
+The addon can be moved and resized to fit any screen comfortably. This addon has the ability to track up to 5 customizable buffs (one for each available corner), as well as debuffs on each frame for poisons (green), diseases (orange), curses (purple), and whitelisted debuffs (red). Debuffs are displayed as a colored box around the health percentage accordingly colored to the debuff or as a full color overlay on the health bar.
+
+
+###########################################################
+
+[color="SeaGreen"][u][b]CONFIGURATION:[/b][/u][/color]
+
+There is a minimap button included that will do the following: LeftClick - Opens options window. RightClick - unlocks raid frame, MiddleClick to toggle hiding/showing the raid frames, RightClick and drag to move minimap icon
+
+The configuration of the addon is fairly simple. It has an in-game option menu that allows you to set the macro binds to each mouse button with an optional keyboard key for more combination possibilities. In these fields you can pretty well write anything that you can put in a macro. The bindings are saved by the current spec/role you are in. ie. 1-20 and will change automatically if/when you change roles.
+
+[b]In the 2nd options tab[/b] you will find the ability to change the health bar settings. Multiple pre-defined textures as well as many color options settings for various pieces of the unit frames including the backdrop, healthframe, text colors, etc.
+
+[b]The 3rd option tab[/b] contains the spell binding settings. **NEW** this has been setup to allow dragging and dropping of the spell to the button. One step closer to ease of use. Optionally Left Clicking will set the target macro to that unit, and right clicking will clear that key.
+
+[b]4th option tab[/b] is the Buff/Debuff options. Again, drag and drop to pull a spell to the the corner you wish to track it in, or optionally left clicking will allow you to type in any spell you would like to for FULL CUSTOMIZATION! You can also setup de/buffs to track. Tracking a buff will cause it to show up in a resizeable square on the affected raid frame. You can whitelist debuffs that don’t normally show up for added flexibility as well as blacklist ones you would like to hide.
+
+[b]The last tab[/b] is where you can setup different profiles to be saved. Pretty straight forward. Set a name and click save. (functional but still a little buggy. will be revisited during recoding for 2.0)
+
+
+[b]Command line options available: (type /cbh in game to see list)[/b]
+/cbh show - Show window
+/cbh hide - Hide window
+/cbh reset - Reset default addon settings
+
+/cbh config - Display config window
+/cbh toggle - Toggles displaying main window
+/cbh lock - Allows you to move the frame. Type again to lock.
+/cbh tt - Toggles tooltips on frame mouseover
+
+
+###########################################################
+
+[color="RED"][u][b]KNOWN ISSUES:[/b][/u][/color]
+
+The frame for the Defiler pet "Beacon of Despair" will bug out if it despawns because you run far away from it. I'm trying to create a fix for this, but it's rooted in an issue with how Trion handles the pet. If the pet frame becomes unresponsive, you may need to relog or reloadui to clear it. If this beacon is summoned in combat it will also be unclickable due to the same limitation listed below. Frame will not be interactable unless you do a reloadui or wait for combat to end.
+
+Due to limitation of the API in RIFT at this time, while you are in combat, NEW FRAMES WILL NOT FUNCTION, and no changes can be made to the addon. You cannot get in the options window, unlock the frame, toggle the tooltips, or close/hide/show the frame.
+
+###########################################################
+
+[color="SeaGreen"][u][b]THANKS AND APPRECIATIONS:[/b][/u][/color]
+
+Main thanks go to RagebeastRT for his original Rift Healer. Provided my learning grounds and the beginning of CBH as well as some various fixes. Thanks Rage!
+A huge thanks to dOxxx's LibSimpleWidgets library. Made several pieces of this addon much more functional and usable.
+Thanks also go to ZorbaTHut for LibUnitChange.
+And a big thanks to Protonova for the tips they provided that helped with performance fixes during CBH's early stages.
+Nice work to the original authors on WoWAce for some of the health frame artwork used in this addon.
+
+All feedback and ideas are welcome. Please let me know if you have any feedback at all. It is appreciated and contributes to the continuation this project.
+
+
+updated for Storm Legion: 8/8/2013

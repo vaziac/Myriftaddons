@@ -1,0 +1,53 @@
+1.3:
+-Defend the Fallen added
+-Verse of Joy added
+-Resuscitating Chain added
+-Tactician detection changed to Rending Munitions
+
+1.2.2:
+-fixed Error 223
+
+1.2.1:
+-preventive fix for Error 665
+-"Error:remPlayer" shouldn't show anymore
+-functions made local
+
+1.2:
+-huge structural changes in the whole scanning process
+	-now also allows multiple bards/archons
+-if a buff gets detected in fight, can now be added on the flight
+-only resets people now if they change role, if the addon misses someone target him and type /rcd cleartarget
+-go /rcd config for full customization
+
+1.1:
+
+Fixes:
+-Archon should see himself now
+-removed impact of buff order
+(-unused invisible frames are now bound to the anchor)
+
+Changes:
+-new framework to visualize buff groups
+-more transparent background to create a contrast to the framework
+-text outlines for better visibility
+-heat wave mechanic added
+-automatic clear on groupleave
+-removed automatic scan when not in group
+-freeze option added
+-slash commands for scan and clear added, type /rcd to see all commands
+-cooldown bar starts at the beginning
+-removed @server on names
+
+1.0.3:
+-Fixed some rare potential bug
+-Introducing custom changelog and automatic versioning
+
+1.0.2:
+-Fixed Bug, that appeared when Archon/BM dies
+-Fixed Bug, that appeared on combat start
+
+1.0.1:
+-Login Bug Fix
+
+1.0:
+Release

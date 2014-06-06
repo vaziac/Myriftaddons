@@ -1,0 +1,30 @@
+Identifier = "SafesRaidManager"
+
+Name = "Safe's Raid Manager"
+NameShort = "LibSRM"
+
+Description = "Library to manage and monitor Raid members."
+
+Author = "Paul Snart"
+Website = "http://twitter.com/#!/psnart"
+Email = "snarty@gmail.com"
+
+Version = "1.1.8"
+
+Environment = "1.9"
+
+RunOnStartup = {
+	"SafesRaidManager.lua",
+}
+
+Embed = {
+	LibUnitChange = true,
+}
+
+Dependencies = {
+	LibUnitChange = {"required", "before"},
+}
+-- X-Curse-Packaged-Version: r6
+-- X-Curse-Project-Name: Safe's Raid Manager
+-- X-Curse-Project-ID: safes-raid-manager
+-- X-Curse-Repository-ID: rift/safes-raid-manager/mainline

@@ -1,0 +1,35 @@
+Identifier = "RaidCoolDowns"
+ 
+Name = "RaidCoolDowns"
+ 
+Description = "Similar zu KBM's Res Master it displays the important Raid Cooldowns of Bard, Archon, Beastmaster, Tactician and Chloromancer. Type /rcd to see the list of available commands."
+ 
+Author = "Quickblink"
+ 
+Version = "1.3"
+ 
+Email = "gric2@online.de"
+ 
+Environment = "2.7"
+ 
+RunOnStartup = {
+    "RaidCoolDowns.lua",
+}
+
+SavedVariables = {
+	RCD_saved = 'character',
+}
+
+Embed = {
+	["libs/SafesRaidManager"] = true,
+	["libs/LibSimpleWidgets"] = true,
+}
+
+Dependencies = {
+	SafesRaidManager = {"required", "before"},
+	LibSimpleWidgets = {"required", "before"},
+}
+-- X-Curse-Packaged-Version: 1.3
+-- X-Curse-Project-Name: RaidCoolDowns
+-- X-Curse-Project-ID: raidcooldowns
+-- X-Curse-Repository-ID: rift/raidcooldowns/mainline

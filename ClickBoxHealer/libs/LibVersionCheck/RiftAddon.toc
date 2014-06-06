@@ -1,0 +1,33 @@
+Identifier = "LibVersionCheck"
+
+Name = {
+  English = "LibVersionCheck"
+}
+
+Description = {
+  English  = "A Library to exchange Addon Version info with other players, to remind when a new addon version is available",
+}
+
+Email = "blohm@s.netic.de"
+Version = "0.05"
+Environment = "2.2"
+SavedVariables = {
+   LibVersionCheckVersions = "global",
+   LibVersionCheckSpy      = "global",
+   LibVersionCheckSettings = "account",
+}
+
+Dependencies = {
+	ApiBrowser = {"optional", "before"},
+};
+
+RunOnStartup = {
+  "Translations.lua",
+  "main.lua",
+  "UI.lua",
+  "ApiBrowser.lua",
+}
+-- X-Curse-Packaged-Version: v1.31
+-- X-Curse-Project-Name: Click Box Healer
+-- X-Curse-Project-ID: click-box-healer
+-- X-Curse-Repository-ID: rift/click-box-healer/mainline

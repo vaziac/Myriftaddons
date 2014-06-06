@@ -1,0 +1,12 @@
+tag v1.31
+f79628305d0b24710bd20b9abf86a12c79889700
+Solsis00 <jvolf000@gmail.com>
+2014-05-26 16:15:44 -0500
+
+Tagging as release v1.31
+
+
+--------------------
+
+Solsis00:
+	- * Fixed a bug with incorrect securemode for target frame * Fixed a bug that caused a nil values sometimes with buffs

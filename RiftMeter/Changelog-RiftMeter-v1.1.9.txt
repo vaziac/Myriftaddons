@@ -1,0 +1,12 @@
+tag v1.1.9
+ad9fafee8fdd40088cf23c5d46d1123806abd7f7
+Vince <BlackOut@Brutwacht>
+2014-01-13 21:21:48 +0100
+
+v1.1.9
+
+
+--------------------
+
+Vince:
+	- Fixed deathlog

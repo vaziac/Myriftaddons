@@ -1,0 +1,56 @@
+Identifier = "ClickBoxHealer"
+Name = "Click Box Healer"
+NameShort = "CBH"
+Description = "Grid type addon for Raid Frames in Rift. Ultimate goal of being a full unit frame replacement and then some.  \n\nCommand line options available: (type /cbh in game to see list) \n /cbh show - Show window \n /cbh hide - Hide window \n /cbh reset - Reset default addon settings \n\n /cbh config - Display config window \n /cbh toggle - Toggles displaying main window \n /cbh lock - Allows you to move the frame. Type again to lock. \n /cbh tt - Toggles tooltips on frame mouseover \n\n **/cbh sets is no longer used as sets are saved by current spec/role"
+
+Author = "Solsis00"
+Version = "1.31"
+Email = "jvolf000@gmail.com"
+Environment = "2.3"
+Embed = {
+	["libs/LibSimpleWidgets"] = true,
+	["libs/LibUnitChange"] = true,
+	["libs/LibVersionCheck"] = true,
+	["libs/Align"] = true,
+}
+
+Dependencies = {
+	LibVersionCheck = {"required", "before"},
+	LibSimpleWidgets = {"required", "before"},
+	LibUnitChange = {"required", "before"},
+	Align = {"required", "before"},
+}
+
+RunOnStartup = {
+	"loadSettings.lua",
+	"objects.lua",
+	"view.lua",
+	"main.lua",
+	"optionWindow.lua",
+	"conf/configWindow.lua",
+	"conf/configWindowPlayer.lua",
+	"conf/configWindowTarget.lua",
+	"conf/configWindowRaid.lua",
+	"events.lua",
+	"modules/cbh_player.lua",
+	"modules/cbh_target.lua",
+}
+
+SavedVariables = {
+	cbhSelectedLayout = 'character',
+	cbhMacroText = 'character',
+	cbhMacroButton = 'character',
+	cbhBuffListA = 'character',
+	cbhBuffWatchList = 'character',
+	cbhBuffColors = 'character',
+	cbhBuffWarnColors = 'character',
+	cbhDeBuffWList = 'account',
+	cbhDeBuffBList = 'account',
+	cbhCustomLayouts = 'account',
+	cbhPlayerValues = 'account',
+	cbhTargetValues = 'account',
+}
+-- X-Curse-Packaged-Version: v1.31
+-- X-Curse-Project-Name: Click Box Healer
+-- X-Curse-Project-ID: click-box-healer
+-- X-Curse-Repository-ID: rift/click-box-healer/mainline

@@ -1,0 +1,10 @@
+tag v0.6.2
+f90c1806a96a6b86cd86214c4ce26b6d440090b9
+Lifeismystery <Lifeismystery@yandex.ru>
+2014-05-04 20:01:43 +0400
+
+
+
+--------------------
+
+No changelog
