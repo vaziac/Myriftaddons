@@ -4,20 +4,27 @@ Name = "King Boss Mods"
 
 NameShort = "KBM"
 
-Description = "Development of a fully fledged Raid and Dungeon encounter alert system."
+Description = "Development of a fully fledged Raid and Dungeon encounter alert system.\n\nType /kbmhelp for details on in-game slash commands."
 
-Author = "Paul Snart"
+Author = "Safe@Deepwood"
 Website = "http://www.facebook.com/KingBossMods"
 Email = "kingbossmods@gmail.com"
 
-Version = "1.5.7.765"
+Version = "1.5.8.772"
 
 Environment = "2.5"
 
 RunOnStartup = {
 	"KingMolinator.lua",
 	"Modules/Menu/MainMenu.lua",
-	"Modules/Menu/Objects.lua",
+	"Modules/Menu/Build.lua",
+	"Modules/Menu/Objects/Objects.lua",
+	"Modules/Menu/Objects/Check.lua",
+	"Modules/Menu/Objects/PlainHeader.lua",
+	"Modules/Menu/Objects/Header.lua",
+	"Modules/Menu/Objects/ColorPicker.lua",
+	"Modules/Menu/Objects/Group.lua",
+	"Modules/Menu/Objects/DropDown.lua",
 	"Modules/Menu/Page.lua",
 	"Modules/Menu/Instance.lua",
 	"Modules/ResMaster.lua",
@@ -28,6 +35,8 @@ RunOnStartup = {
 	"Raids/Storm Legion/Planebreaker Bastion/Eggtenders.lua",
 	"Raids/Storm Legion/Planebreaker Bastion/Thrax.lua",
 	"Raids/Storm Legion/Planebreaker Bastion/Proteus.lua",
+	"Raids/Storm Legion/Planebreaker Bastion/InyrKta.lua",
+	"Raids/Storm Legion/Planebreaker Bastion/Abominus.lua",
 	"Raids/Storm Legion/The Infinity Gate/IGHeader.lua",
 	"Raids/Storm Legion/The Infinity Gate/BreakerX1.lua",
 	"Raids/Storm Legion/The Infinity Gate/Twins.lua",
@@ -326,6 +335,8 @@ SavedVariables = {
 	KBMSLRDPBET_Settings = "account",
 	KBMSLRDPBWT_Settings = "account",
 	KBMSLRDPBPS_Settings = "account",
+	KBMSLRDPBIK_Settings = "account",
+	KBMSLRDPBAB_Settings = "account",
 	KBMSLRDIG_Settings = "account",
 	KBMSLRDIGBX_Settings = "account",
 	KBMSLRDIGVM_Settings = "account",
@@ -604,6 +615,8 @@ SavedVariables = {
 	chKBMSLRDPBET_Settings = "character",
 	chKBMSLRDPBWT_Settings = "character",
 	chKBMSLRDPBPS_Settings = "character",
+	chKBMSLRDPBIK_Settings = "character",
+	chKBMSLRDPBAB_Settings = "character",
 	chKBMSLRDIG_Settings = "character",
 	chKBMSLRDIGBX_Settings = "character",
 	chKBMSLRDIGVM_Settings = "character",	
@@ -897,7 +910,7 @@ Dependencies = {
 -- X-Curse-Project-Name: King Boss Mods
 -- X-Curse-Project-ID: king-molinator
 -- X-Curse-Repository-ID: rift/king-molinator/mainline
--- X-Curse-Packaged-Version: r765
+-- X-Curse-Packaged-Version: r772
 -- X-Curse-Project-Name: King Boss Mods
 -- X-Curse-Project-ID: king-molinator
 -- X-Curse-Repository-ID: rift/king-molinator/mainline

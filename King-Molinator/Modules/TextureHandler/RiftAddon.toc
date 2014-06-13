@@ -20,7 +20,7 @@ RunOnStartup = {
 SavedVariables = {
 	KBMTH_Settings = "account",
 }
--- X-Curse-Packaged-Version: r765
+-- X-Curse-Packaged-Version: r772
 -- X-Curse-Project-Name: King Boss Mods
 -- X-Curse-Project-ID: king-molinator
 -- X-Curse-Repository-ID: rift/king-molinator/mainline

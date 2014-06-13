@@ -9,7 +9,7 @@ Author = "Paul Snart"
 Website = "http://twitter.com/#!/psnart"
 Email = "snarty@gmail.com"
 
-Version = "0.1.9"
+Version = "0.2.0"
 
 Environment = "2.5"
 
@@ -32,7 +32,7 @@ Dependencies = {
 	SafesUnitLib = {"required", "before"},
 	KBMTextureHandler = {"required", "before"},
 }
--- X-Curse-Packaged-Version: r765
+-- X-Curse-Packaged-Version: r772
 -- X-Curse-Project-Name: King Boss Mods
 -- X-Curse-Project-ID: king-molinator
 -- X-Curse-Repository-ID: rift/king-molinator/mainline

@@ -1,4 +1,44 @@
-﻿v1.5.7
+﻿v.1.5.8
+
+LibSUnit (Safe's Unit Lib) 
+* Fixed: Error 1120, which could possibly cause raid tracking issues.
+* Optimized: Reworked raid tracking code to be more streamlined.
+
+Menu
+* Changed: Reworked menu code to be better separated from the main code.
+* New: Started work on new Drop Down menu items.
+
+LibSGui (Safe's GUI Lib)
+* New: Added new Drop Down graphics and initial code base.
+
+Res Master (Thanks to RePyH1 on Curse for the Ids)
+* New: Added Warrior combat res: Soul Redemption
+* New: Added Rogue combat res: Kiss of life
+
+Ready Check
+* New: Added Wind Sigil for Clerics. (Sorry it took so long, I feel bad)
+
+Raids
+* Planebreaker Bastion
+** New: Encounter support for Inyr'Kta (By Noshei)
+** New: Encounter support for Abominus (By Noshei)
+
+Experts
+* Archive of Flesh
+** Emphareal
+*** Added: Alert for Flood the Halls (Warning)
+*** Added: Alert for Flood the Halls (Duration)
+
+Dungeons
+* Archive of Flesh
+** Emphareal
+*** Added: Alert for Flood the Halls (Warning)
+*** Added: Alert for Flood the Halls (Duration)
+** Ahzrius
+*** Added: Alert for Drastic Renovations.
+
+----
+v1.5.7
 
 Raids
 * Planebreaker Bastion

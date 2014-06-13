@@ -34,6 +34,12 @@ PC.RezBank = {
 		["A2D3F2123EE93DE48"] = {}, -- Spark of Life
 		["A4AE33670A72C0F45"] = {}, -- Soul Tether
 	},
+	["warrior"] = {
+		["A5F5BA8A108A5111A"] = {}, -- Soul Redemption
+	},
+	["rogue"] = {
+		["A72E5E73166B95DD1"] = {}, -- Kiss Of Life
+	},
 }
 
 KBM.PlayerControl = PC
@@ -185,7 +191,7 @@ function PC.CallingChange(handle, UnitObj)
 		end
 	else
 		-- Request BR
-		if UnitObj.Calling == "mage" or UnitObj.Calling == "cleric" then
+		if UnitObj.Calling then
 			KBM.ResMaster.Rezes.Tracked[UnitObj.Name] = {
 				UnitID = UnitObj.UnitID,
 				UnitObj = UnitObj,
@@ -256,7 +262,7 @@ function PC.GroupJoin(handle, UnitObj, Spec)
 	if UnitObj.Name ~= LibSUnit.Player.Name then
 		if not KBM.ResMaster.Rezes.Tracked[UnitObj.Name] then
 			if not UnitObj.Offline then
-				if UnitObj.Calling == "mage" or UnitObj.Calling == "cleric" then
+				if UnitObj.Calling then
 					KBM.ResMaster.Rezes.Tracked[UnitObj.Name] = {
 						UnitID = UnitObj.UnitID,
 						UnitObj = UnitObj,
